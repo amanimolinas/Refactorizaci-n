@@ -22,7 +22,6 @@ def menu_principal():
             print('Por favor, introduzca un número válido.')
 
 def cargade_puntuacion_comentario():
-    """Función para ingresar una puntuación y comentario"""
     while True:
         point = input('Por favor, introduzca una puntuación en una escala de 1 a 5: ')
         if point.isdecimal():
@@ -39,14 +38,12 @@ def cargade_puntuacion_comentario():
             print('Por favor, introduzca la puntuación en números.')
 
 def mostrar_resultados():
-    """Función para mostrar los resultados hasta la fecha"""
     print('Resultados hasta la fecha:')
     try:
         with open("data.txt", 'r') as read_file:
             print(read_file.read())
     except FileNotFoundError:
         print('Aún no hay resultados guardados.')
-
 
 menu_principal()
 
