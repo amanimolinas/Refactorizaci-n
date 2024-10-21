@@ -1,6 +1,5 @@
 
 def menu_principal():
-    """Función principal para mostrar el menú y procesar la elección del usuario"""
     while True:
         print('Seleccione el proceso que desea aplicar:')
         print('1: Ingresar puntuación y comentario')
